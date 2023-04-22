@@ -1,0 +1,19 @@
+python inversion/scripts/train_restyle_psp.py \
+--dataset_type eagle \
+--encoder_type BackboneEncoder \
+--exp_dir experiments/eagle \
+--batch_size 2 \
+--test_batch_size 2 \
+--workers 8 \
+--test_workers 8 \
+--val_interval 5000 \
+--save_interval 10000 \
+--start_from_latent_avg True \
+--lpips_lambda 0.8 \
+--l2_lambda 1 \
+--id_lambda 0 \
+--moco_lambda 0.5 \
+--input_nc 6 \
+--n_iters_per_batch 3 \
+--output_size 64 \
+--stylegan_weights pretrained_models/stylegan3_eagle/network-snapshot-025000.pt

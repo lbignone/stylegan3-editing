@@ -1,0 +1,45 @@
+name: sg3_env_parana
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex
+  - ca-certificates
+  - certifi
+  - libedit
+  - libffi
+  - libgcc-ng
+  - libstdcxx-ng
+  - ncurses
+  - ninja
+  - openssl
+  - pip
+  - python
+  - python_abi
+  - readline
+  - setuptools
+  - sqlite
+  - tk
+  - wheel
+  - xz
+  - zlib
+  - pip:
+    - scipy
+    - matplotlib
+    - tqdm
+    - numpy
+    - opencv-python
+    - pillow
+    - tensorboard
+    - torch
+    - torchvision
+    - scikit-learn
+    - imageio
+    - imageio-ffmpeg
+    - dataclasses
+    - dlib
+    - ftfy
+    - gdown
+    - git+https://github.com/openai/CLIP.git
+    - pyrallis
+prefix: ~/anaconda3/envs/sg3_env_parana

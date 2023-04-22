@@ -5,7 +5,10 @@ dataset_paths = {
 	'celeba_test': Path(''),
 
 	'ffhq': Path(''),
-	'ffhq_unaligned': Path('')
+	'ffhq_unaligned': Path(''),
+    
+	'eagle_train': Path('/home/lbignone/Development/stylegan3-editing/data/eagle_galrand_64x64/train'),
+	'eagle_test': Path('/home/lbignone/Development/stylegan3-editing/data/eagle_galrand_64x64/test')
 }
 
 model_paths = {
@@ -16,6 +19,8 @@ model_paths = {
 	'stylegan3_ffhq_pt': Path('pretrained_models/sg3-r-ffhq-1024.pt'),
 	'stylegan3_ffhq_unaligned': Path('pretrained_models/stylegan3-r-ffhqu-1024x1024.pkl'),
 	'stylegan3_ffhq_unaligned_pt': Path('pretrained_models/sg3-r-ffhqu-1024.pt'),
+    'stylegan3_eagle_galrand_64x64': Path('pretrained_models/stylegan3_eagle/network-snapshot-025000.pkl'),
+    'stylegan3_eagle_galrand_64x64_pt': Path('pretrained_models/stylegan3_eagle/network-snapshot-025000.pt'),
 	# model for face alignment
 	'shape_predictor': Path('pretrained_models/shape_predictor_68_face_landmarks.dat'),
 	# models for ID similarity computation
@@ -25,7 +30,8 @@ model_paths = {
 	'mtcnn_onet': Path('pretrained_models/mtcnn/onet.npy'),
 	# classifiers used for interfacegan training
 	'age_estimator': Path('pretrained_models/dex_age_classifier.pth'),
-	'pose_estimator': Path('pretrained_models/hopenet_robust_alpha1.pkl')
+	'pose_estimator': Path('pretrained_models/hopenet_robust_alpha1.pkl'),
+    'moco': Path('pretrained_models/moco_v2_800ep_pretrain.pt')
 }
 
 styleclip_directions = {
