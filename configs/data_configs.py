@@ -16,5 +16,12 @@ DATASETS = {
 		'train_target_root': dataset_paths['eagle_train'],
 		'test_source_root': dataset_paths['eagle_test'],
 		'test_target_root': dataset_paths['eagle_test']
+	},
+    'lhq_256': {
+		'transforms': transforms_config.EncodeTransforms,
+		'train_source_root': dataset_paths['lhq_256_train'],
+		'train_target_root': dataset_paths['lhq_256_train'],
+		'test_source_root': dataset_paths['lhq_256_test'],
+		'test_target_root': dataset_paths['lhq_256_test']
 	}
 }
