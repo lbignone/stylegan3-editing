@@ -23,6 +23,7 @@ dependencies:
   - wheel
   - xz
   - zlib
+  - click
   - pip:
     - scipy
     - matplotlib
