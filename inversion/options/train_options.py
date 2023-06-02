@@ -22,6 +22,7 @@ class TrainOptions:
     output_size: int = 1024
     # Number of forward passes per batch during training
     n_iters_per_batch: int = 3
+    config: str = None
 
     """ Dataset args """
     # Batch size for training
