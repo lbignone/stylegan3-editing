@@ -39,7 +39,7 @@ class pSp(nn.Module):
         else:
             encoder_ckpt = self._get_encoder_checkpoint()
             self.encoder.load_state_dict(encoder_ckpt, strict=False)
-            self.decoder = SG3Generator(checkpoint_path=self.opts.stylegan_weights).decoder
+            self.decoder = SG3Generator(checkpoint_path=self.opts.stylegan_weights, res=self.opts.output_size).decoder
             self.latent_avg = self.decoder.mapping.w_avg
 
     def forward(self, x, latent=None, resize=True, input_code=False, landmarks_transform=None,
