@@ -10,6 +10,9 @@ dataset_paths = {
 	'eagle_train': Path('/home/lbignone/Development/stylegan3-editing/data/eagle_galrand_64x64/train'),
 	'eagle_test': Path('/home/lbignone/Development/stylegan3-editing/data/eagle_galrand_64x64/test'),
     
+	'eagle_galface_256x256_train': Path('/home/lbignone/Development/stylegan3-editing/data/eagle_galface_256x256/train'),
+	'eagle_galface_256x256_test': Path('/home/lbignone/Development/stylegan3-editing/data/eagle_galface_256x256/test'),
+    
 	'lhq_256_train': Path('/home/lbignone/Development/stylegan3-editing/data/lhq_256/train'),
     'lhq_256_test': Path('/home/lbignone/Development/stylegan3-editing/data/lhq_256/test'),
 }
